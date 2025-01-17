@@ -1,0 +1,303 @@
+/* General Styles */
+/* html {
+    scroll-behavior: smooth;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f5f5f5;
+    background: #000000;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: slideDown 1s ease-in-out;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    transition: background 0.4s, transform 0.3s;
+}
+
+.nav-links li a:hover {
+    background: #ffd700;
+    transform: scale(1.1);
+    color: black;
+}
+
+/* Full Screen Sections */
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hero Section (Page 1) */
+.hero {
+    background: linear-gradient(135deg, #000000, #1a1a1a, #ffd700);
+    color: white;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: #ffd700;
+    text-shadow: 2px 2px 10px rgba(255, 215, 0, 0.8);
+    position: absolute;
+    top: 40%;
+    right: 50%;
+
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #faf9f9;
+    opacity: 4;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.hero .btn {
+    padding: 1rem 2rem;
+    background: #ffd700;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    display: inline-block;
+    animation: popUp 1.8s ease-in-out;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+}
+
+.hero .btn:hover {
+    background: #1a1a1a;
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* About Bloomscrolling Section (Page 2) */
+.about {
+    background: #1a1a1a;
+    color: white;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about h2 {
+    font-size: 3rem;
+    color: #ffd700;
+    position: absolute;
+    top: 140%;
+    left: 32%;
+}
+
+.about h3 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 1.9;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 155%;
+    left: 22%;
+}
+.about h4 {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 1.9;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 160%;
+    left: 26%;
+}
+
+
+.about .btn {
+    padding: 1rem 2rem;
+    background: #ffd700;
+    color: black;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    display: inline-block;
+    animation: popUp 1.8s ease-in-out;
+    position: absolute;
+    top: 170%;
+    left: 44%;
+}
+
+.about .btn:hover {
+    background: #1a1a1a;
+    color: #ffd700;
+    transform: scale(1.1);
+}
+
+/* Highlights Section (Page 3) */
+.highlights {
+    background: #000000;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 4rem 2rem;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.highlights div {
+    text-align: center;
+    padding: 2rem;
+    background: #1a1a1a;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
+    transform: scale(1);
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.highlights div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.4);
+}
+
+.highlights img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.highlights img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.4);
+}
+
+.highlights h3 {
+    color: #ffd700;
+    margin-bottom: 0.8rem;
+    font-size: 1.5rem;
+}
+
+.highlights p {
+    color: #f5f5f5;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Contact Form Section (Page 4) */
+/* Contact Form Section (Page 4) */
+.contact-form {
+    background: #1a1a1a;
+    padding: 6rem 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form h2 {
+    font-size: 3.5rem;
+    color: #ffd700;
+    margin-bottom: 3rem;
+    font-weight: bold;
+    position: absolute;
+    top: 325%;
+    left: 38%;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    top: 345%;
+    left: 30%;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 1.2rem;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+    background: #000000;
+    color: white;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border 0.3s;
+    resize: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #f5f5f5;
+}
+
+.contact-form button {
+    padding: 1.2rem 2.5rem;
+    background: #ffd700;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background: #1a1a1a;
+    color: #ffd700;
+    transform: scale(1.05);
+}
+
+/* Ensure the form stays centered and maintains proper spacing */
+.contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    max-width: 550px;
+}
